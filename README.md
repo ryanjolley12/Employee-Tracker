@@ -1,4 +1,3 @@
-<img width="782" alt="Screen Shot 2021-08-16 at 12 50 38 PM" src="https://user-images.githubusercontent.com/83616082/129600116-927392d7-a1b3-44d9-98d3-3573a33315a0.png">
 # Employee-Tracker
 
 ## Description 
@@ -24,5 +23,9 @@ WHEN I choose to add an employee <br>
 THEN I am prompted to enter the employee’s first name, last name, role, and manager and that employee is added to the database <br>
 WHEN I choose to update an employee role <br>
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database <br>
+
+## Demo
+https://drive.google.com/file/d/16pL8jn4kjWeTHAR2Jr_Oyog7gnhTbLeE/view
+<img width="782" alt="Screen Shot 2021-08-16 at 12 50 38 PM" src="https://user-images.githubusercontent.com/83616082/129600116-927392d7-a1b3-44d9-98d3-3573a33315a0.png">
 
 ## Ryan Jolley 2021
