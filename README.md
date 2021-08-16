@@ -1,3 +1,4 @@
+<img width="782" alt="Screen Shot 2021-08-16 at 12 50 38 PM" src="https://user-images.githubusercontent.com/83616082/129600116-927392d7-a1b3-44d9-98d3-3573a33315a0.png">
 # Employee-Tracker
 
 ## Description 
