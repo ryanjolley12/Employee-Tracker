@@ -234,9 +234,7 @@ async function addEmployee() {
     ]);
     // console.log(newEmployee);
     const employeeRoleId = await connection.promise().query('SELECT id FROM e_role WHERE title = ?', newEmployee.employee);
-    // console.log("=========")
-    // console.log(newEmployee.employee);
-    // console.log(employeeRoleId[0][0].id);
+
     await connection.promise().query(`INSERT INTO employee SET ? `, {
 
         first_name: newEmployee.firstName,
