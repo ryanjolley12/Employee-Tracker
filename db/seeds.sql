@@ -1,3 +1,4 @@
+-- copied seeds from anidino and modules
 INSERT INTO departments (department_name)
 VALUES 
     ('Management'),
