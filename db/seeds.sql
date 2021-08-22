@@ -1,4 +1,5 @@
-INSERT INTO departments (department_name)
+-- copied seeds from anidino and modules
+INSERT INTO departments (name)
 VALUES 
     ('Management'),
     ('Marketing'),
