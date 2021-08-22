@@ -26,9 +26,10 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Demo
 https://drive.google.com/file/d/1DEH03v55EiZC5xvtgqqQm9KJbpZkMRyl/view
-<img width="378" alt="Screen Shot 2021-08-22 at 8 38 26 AM" src="https://user-images.githubusercontent.com/83616082/130355481-663fb6e6-6a7d-4aa0-b542-afa8ef0b4141.png">
+
+<img width="422" alt="Screen Shot 2021-08-22 at 8 41 31 AM" src="https://user-images.githubusercontent.com/83616082/130355559-21876bb3-4787-4655-acf2-3028831f8ae7.png">
+<img width="270" alt="Screen Shot 2021-08-22 at 8 41 43 AM" src="https://user-images.githubusercontent.com/83616082/130355566-87d33205-882a-44e8-9224-d5e105a1d838.png">
 <img width="378" alt="Screen Shot 2021-08-22 at 8 39 05 AM" src="https://user-images.githubusercontent.com/83616082/130355494-6e9e9bc5-b550-4329-86a1-138b3c03a7fc.png">
 <img width="378" alt="Screen Shot 2021-08-22 at 8 38 37 AM" src="https://user-images.githubusercontent.com/83616082/130355485-26e17edf-2dff-4c9a-b21b-c7bb73ac96db.png">
-<img width="378" alt="Screen Shot 2021-08-22 at 8 38 53 AM" src="https://user-images.githubusercontent.com/83616082/130355488-5e7668c3-a877-48eb-97a4-dbc44fa78f63.png">
 
 ## Ryan Jolley 2021
