@@ -25,7 +25,10 @@ WHEN I choose to update an employee role <br>
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database <br>
 
 ## Demo
-https://drive.google.com/file/d/16pL8jn4kjWeTHAR2Jr_Oyog7gnhTbLeE/view
-<img width="782" alt="Screen Shot 2021-08-16 at 12 50 38 PM" src="https://user-images.githubusercontent.com/83616082/129600116-927392d7-a1b3-44d9-98d3-3573a33315a0.png">
+https://drive.google.com/file/d/1DEH03v55EiZC5xvtgqqQm9KJbpZkMRyl/view<img width="378" alt="Screen Shot 2021-08-22 at 8 38 26 AM" src="https://user-images.githubusercontent.com/83616082/130355481-663fb6e6-6a7d-4aa0-b542-afa8ef0b4141.png">
+<img width="378" alt="Screen Shot 2021-08-22 at 8 39 05 AM" src="https://user-images.githubusercontent.com/83616082/130355494-6e9e9bc5-b550-4329-86a1-138b3c03a7fc.png">
+<img width="378" alt="Screen Shot 2021-08-22 at 8 38 37 AM" src="https://user-images.githubusercontent.com/83616082/130355485-26e17edf-2dff-4c9a-b21b-c7bb73ac96db.png">
+<img width="378" alt="Screen Shot 2021-08-22 at 8 38 53 AM" src="https://user-images.githubusercontent.com/83616082/130355488-5e7668c3-a877-48eb-97a4-dbc44fa78f63.png">
+<img width="378" alt="Screen Shot 2021-08-16 at 12 50 38 PM" src="https://user-images.githubusercontent.com/83616082/129600116-927392d7-a1b3-44d9-98d3-3573a33315a0.png">
 
 ## Ryan Jolley 2021
