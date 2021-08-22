@@ -80,7 +80,7 @@ function startTracker() {
 
 // Shows all departments
 function viewDepartments() {
-    db.query(`SELECT * FROM department`, (err, data) => {
+    db.query(`SELECT * FROM departments`, (err, data) => {
         if (err) throw err;
         console.log('Displaying all departments');
         console.table(data);
@@ -90,7 +90,7 @@ function viewDepartments() {
 
 // Shows all roles
 function viewRoles() {
-    db.query(`SELECT * FROM role`, (err, data) => {
+    db.query(`SELECT * FROM roles`, (err, data) => {
         if (err) throw err;
         console.log('Displaying all roles');
         console.table(data);
@@ -100,7 +100,7 @@ function viewRoles() {
 
 // Shows all employees
 function viewEmployees() {
-    db.query(`SELECT * FROM employee`, (err, data) => {
+    db.query(`SELECT * FROM employees`, (err, data) => {
         if (err) throw err;
         console.log('Displaying all employees');
         console.table(data);
@@ -112,7 +112,7 @@ function viewEmployees() {
 function addDepartment() {
     inquirer.prompt([
         {
-            name: 'department',
+            name: 'departments',
             type: 'input',
             message: 'What is the name of the new department?',
             validate: (value) => {
@@ -124,7 +124,7 @@ function addDepartment() {
             }
         }
     ]).then(answer => {
-        db.query(`INSERT INTO department SET ?`, {name: answer.department}, (err) => {
+        db.query(`INSERT INTO departments SET ?`, {name: answer.departments}, (err) => {
             if (err) throw err;
             console.log(`New department ${answer.department} has been added.`);
             startTracker();
@@ -134,7 +134,7 @@ function addDepartment() {
 
 // Allows user to add roles
 function addRole() {
-    const sql = `SELECT * FROM department`;
+    const sql = `SELECT * FROM departments`;
     db.query(sql, (err, results) => {
         if (err) throw err;
 
@@ -164,7 +164,7 @@ function addRole() {
                 }
             },
             {
-                name: 'department',
+                name: 'departments',
                 type: 'rawlist',
                 choices: () => {
                     let deptChoices = [];
@@ -178,12 +178,12 @@ function addRole() {
         ]).then(answer => {
             let chosenDept;
             for(let i = 0; i < results.length; i++) {
-                if(results[i].name === answer.department) {
+                if(results[i].name === answer.departments) {
                     chosenDept = results[i];
                 }
             }
 
-            db.query(`INSERT INTO role SET ?`,
+            db.query(`INSERT INTO roles SET ?`,
             {
                 title: answer.title,
                 salary: answer.salary,
@@ -199,7 +199,7 @@ function addRole() {
 
 // Allows user to add employees
 function addEmployee() {
-    const sql = `SELECT * FROM employee, role`;
+    const sql = `SELECT * FROM employees, roles`;
     db.query(sql, (err, results) => {
         if (err) throw err;
 
@@ -229,7 +229,7 @@ function addEmployee() {
                 }
             },
             {
-                name: 'role',
+                name: 'roles',
                 type: 'rawlist',
                 choices: () => {
                     let roleChoices = [];
@@ -245,7 +245,7 @@ function addEmployee() {
             let chosenRole;
 
             for(let i = 0; i < results.length; i++) {
-                if(results[i].title === answer.role) {
+                if(results[i].title === answer.roles) {
                     chosenRole = results[i];
                 }
             }
@@ -266,7 +266,7 @@ function addEmployee() {
 
 // Allows user to update an employees role
 function updateEmployeeRole() {
-    db.query(`SELECT * FROM employee, role`, (err, results) => {
+    db.query(`SELECT * FROM employees, roles`, (err, results) => {
         if (err) throw err;
 
         inquirer.prompt([
@@ -301,17 +301,17 @@ function updateEmployeeRole() {
             let chosenRole;
 
             for(let i = 0; i < results.length; i++) {
-                if(results[i].last_name === answer.employee) {
+                if(results[i].last_name === answer.employees) {
                     chosenEmp = results[i];
                 }
             }
             for(let i = 0; i < results.length; i++) {
-                if(results[i].title === answer.role) {
+                if(results[i].title === answer.roles) {
                     chosenRole = results[i];
                 }
             }
 
-            db.query(`UPDATE employee SET ? WHERE ?`,
+            db.query(`UPDATE employees SET ? WHERE ?`,
             [
                 {role_id: chosenRole},
                 {last_name: chosenEmp}
